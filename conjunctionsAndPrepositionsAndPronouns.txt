@@ -11,7 +11,7 @@
 ,ли,либо,лишь бы,лишь только,между тем как,нежели,не столько,сколько
 ,не то,не только,не только не,но даже,невзирая на то что,но,однако
 ,особенно,оттого,оттого что,отчего,перед тем как,по мере того как
-,по причине того что,подобно тому как,пока,покамест,покуда,пока не,после того как
+,по причине того что,подобно тому как,пока,покамест,покуда,пока не,после того как,подобно
 ,поскольку,потому,потому что,почему,прежде чем,при всем том что
 ,при условии что,притом,причем,пускай,пусть,ради того чтобы,раз
 ,раньше чем,с тем чтобы,с тех пор как,словно,так же,как и
@@ -35,4 +35,20 @@
 чьей,чьих,чьими,о чьей,чью,твой,твое,твоё,твоя,твои,твоего,твоей,твоих,твоему,твоим,
 твое,твою,твоим,твоими,о твоем,о твоём,о твоей,о твоих,ваш,ваше,ваше,ваши,вашего,
 вашей,ваших,вашему,вашим,ваше,вашу,вашим,вашими,о вашем,о вашей,о ваших,тот,то,та,те
-,того,той,тех,тому,тем,ту,тем,теми,о том,о той,о тех
+,того,той,тех,тому,тем,ту,тем,теми,о том,о той,о тех,also,and,as,as far as,as long as,
+as soon as,as weel as,weel,becouse,becouse of,of,and,but,or,either,however,if,in,moreover,neither,
+nor,nevertheless,no,where,how,when,who,what,why,now,that,once,the,otherwise,so,not,still,than,that,
+therefore,although,thus,unless,whether,while,yet,for,against,like,unlike,with,without,within,to,meanwhile,
+beyond,whereas,at,i,you,he,she,it,we,they,me,him,her,it,us,them,my,your,his,her,its,our,their,mine,
+yours,his,hers,ours,theirs,this,that,these,those,such,myself,yourself,himself,herself,itself,ourselves,
+yourselves,themselves,who,what,which,whose,whoever,whatever,whichever,who,whose,which,
+some,something,somebody,someone,any,anything,anybody,anyone,no,nothing,nobody,no,none,neither
+other,another,all,each,both,either,every,everything,everybody,everyone,aboard,about,above,absent,
+across,afore,after,against,along,amid,amidst,among,amongst,around,aside,aslant,astride,at,
+athwart,atop,bar,before,behind,below,beneath,beside,besides,between,betwixt,beyond,but,by,
+circe,despite,down,except,for,from,given,in,inside,into,like,mid,minus,near,neath,next,
+notwithstanding,of,off,on,opposite,out,outside,over,pace,per,plus,post,pro,qua,
+round,since,than,through,till,times,to,toward,towards,under,inderneath,unlike,until,up,
+versus,via,vice,with,without,barring,concerning,considering,depending,during,granted,
+excepting,excluding,failing,following,including,past,pending,regarding,alongside,
+within,outside,upon,onto,throughout,wherewith
