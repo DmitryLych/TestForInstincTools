@@ -2,10 +2,9 @@ package org.lych.threads;
 
 import org.lych.parser.BalanceOfBrackets;
 
-public class FirstThread extends Thread {
+public class ThreadForBrackets extends Thread {
     String text;
-    String answer;
-    public FirstThread(String text)
+    public ThreadForBrackets(String text)
     {
         this.text=text;
     }

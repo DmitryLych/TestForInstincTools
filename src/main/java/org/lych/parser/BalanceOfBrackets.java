@@ -5,11 +5,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class BalanceOfBrackets {
-    public void balanceOfBrackets(String text) {
+    public void balanceOfBrackets(String text) { /*Метод анализирующий текст на корректность расстановки скобок.
+                                                 A method that analyzes the text for the correctness of the brackets.*/
         Stack test = new Stack();
         Pattern pattern = Pattern.compile("[]]|[)]|[}]|[(]|[{]|[\\[]");
         Matcher matcher = pattern.matcher(text);
-        while (matcher.find()) {
+        while (matcher.find()) { /*Цикл на проверку корректности.
+                                   Cycle to verify the correctness.*/
             if (test.empty()) {
                 test.push(matcher.group());
 
@@ -22,7 +24,8 @@ public class BalanceOfBrackets {
             }
             else test.push(matcher.group());
         }
-        if(test.empty())
+        if(test.empty())/*Вывод результата.
+                          Printing result */
         {
             System.out.println("Корректность расстановки скобок в тексте: correct");
         }

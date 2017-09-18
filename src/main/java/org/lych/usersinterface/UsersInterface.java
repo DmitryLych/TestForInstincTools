@@ -1,8 +1,8 @@
 package org.lych.usersinterface;
 
 import org.lych.reading.ReadingFromFile;
-import org.lych.threads.SecondThread;
-import org.lych.threads.FirstThread;
+import org.lych.threads.ThreadForTextParsing;
+import org.lych.threads.ThreadForBrackets;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -16,9 +16,9 @@ public class UsersInterface {
         reader.close();
         ReadingFromFile readingFile=new ReadingFromFile();
         String text =readingFile.input(fileName);
-        FirstThread balance=new FirstThread(text);
+        ThreadForBrackets balance=new ThreadForBrackets(text);
         balance.start();
-        SecondThread words=new SecondThread(text);
+        ThreadForTextParsing words=new ThreadForTextParsing(text);
         words.start();
 
 

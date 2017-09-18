@@ -4,9 +4,9 @@ import org.lych.parser.TextParsing;
 
 import java.io.IOException;
 
-public class SecondThread extends Thread {
+public class ThreadForTextParsing extends Thread {
     String text;
-    public SecondThread(String text)
+    public ThreadForTextParsing(String text)
     {
         this.text=text;
     }

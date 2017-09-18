@@ -8,23 +8,31 @@ import java.util.*;
 
 
 public class TextParsing {
-    public void topWords(String text) throws IOException {
+    public void topWords(String text) throws IOException {/*Метод выполняющий поиск 10 самых частоиспользуемых слов в тексте.
+                                                  A method that searches for the 10 most frequently used words in the text.*/
         String conjunctionsAndPrepositionsAndPronouns = "";
         text = text.toLowerCase();
-        Path path = Paths.get("conjunctionsAndPrepositionsAndPronouns.txt");
+        Path path = Paths.get("conjunctionsAndPrepositionsAndPronouns.txt");/*Файл с союзами, предлогами
+                                                                                      и местоимениями.
+                                                                                      File with conjunctions, prepositions
+                                                                                      and pronouns.*/
         Scanner scanner = new Scanner(path, "CP1251");
         TreeMap<String, Integer> textsWords = new TreeMap<String, Integer>();
         StringTokenizer tokenizer = new StringTokenizer(text, "\t\n\r\f,.—!?\"()-0123456789<>|}{[]@#$%^&*+=:;");
 
 
-        String modernText = "";
-        while (tokenizer.hasMoreTokens()) {
+        String modernText ="";
+        while (tokenizer.hasMoreTokens()) {/*Цикл исключающий ненужное для анализа.
+                                             A cycle in which unnecessary symbols are eliminat*/
             modernText += tokenizer.nextToken();
 
         }
         String[] textsWordsArray = modernText.split(" ");
         int repeats = 1;
-        for (String word : textsWordsArray) {
+        for (String word : textsWordsArray) {/*Цикл в котором в TreeMap записываются слова из текста и
+                                             сколько раз они втречались в тексте.
+                                             A loop in which words from text are written to TrayMap and
+                                             how many times they met in the text.*/
             if (textsWords.containsKey(word)) {
                 repeats = textsWords.get(word);
                 textsWords.put(word, ++repeats);
@@ -36,7 +44,9 @@ public class TextParsing {
         }
         scanner.close();
         String []arrayOfconj =conjunctionsAndPrepositionsAndPronouns.split(",");
-        for (String word : arrayOfconj) {
+        for (String word : arrayOfconj) {/*Цикл в котором местоимения союзы и предлоги исключаются из TreeMap.
+                                           Cycle in which the pronouns unions and prepositions are excluded
+                                           from the TreeMap*/
             if (textsWords.containsKey(word)) {
                 textsWords.remove(word);
             }
