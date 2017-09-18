@@ -11,7 +11,7 @@ public class ReadingFromFile {
                                                                           A method that reads text from a file*/
         String text="";
         Path path= Paths.get(thePathToTheFile);
-        Scanner scanner=new Scanner(path,"CP1251");
+        Scanner scanner=new Scanner(path);
         while (scanner.hasNextLine())
         {
             text+=scanner.nextLine()+"\n";

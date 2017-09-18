@@ -15,8 +15,8 @@ public class TextParsing {
         Path path = Paths.get("conjunctionsAndPrepositionsAndPronouns.txt");/*Файл с союзами, предлогами
                                                                                       и местоимениями.
                                                                                       File with conjunctions, prepositions
-                                                                                      and pronouns.*/
-        Scanner scanner = new Scanner(path, "CP1251");
+                                                                                     and pronouns.*/
+        Scanner scanner = new Scanner(path);
         TreeMap<String, Integer> textsWords = new TreeMap<String, Integer>();
         StringTokenizer tokenizer = new StringTokenizer(text, "\t\n\r\f,.—!?\"()-0123456789<>|}{[]@#$%^&*+=:;");
 
